@@ -1,4 +1,5 @@
 django>=3.1,<5.0
+# Django>=2.2,<2.3
 wheel
 sphinx
 tox
@@ -7,6 +8,7 @@ flake8
 requests
 djangorestframework<3.12
 dynamic-rest>=2.1
+# dynamic-rest==1.9.6
 # -r test_requirements.txt
 twine
 psycopg2-binary

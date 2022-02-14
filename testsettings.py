@@ -119,6 +119,7 @@ TEMPLATES = [
                 'django.template.context_processors.static',
                 'django.template.context_processors.tz',
                 'django.contrib.messages.context_processors.messages',
+                'django.template.context_processors.request'
             ],
         },
     },
@@ -199,3 +200,4 @@ if teamcity and teamcity.is_running_under_teamcity():  # pragma: nocover
 else:
     TEST_RUNNER = "test_runner.NoCheckDiscoverRunner"
 
+DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
