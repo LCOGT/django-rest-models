@@ -1227,6 +1227,12 @@ class FakeCursor(object):
     def __init__(self, rowcount):
         self.rowcount = rowcount
 
+    def __enter__(self):
+        pass
+
+    def __exit__(self, exc_type, exc_val, exc_tb):
+        pass
+
 
 class SQLDeleteCompiler(SQLCompiler):
     def execute_sql(self, result_type=MULTI, chunk_size=None):
