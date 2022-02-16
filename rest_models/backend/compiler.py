@@ -1216,7 +1216,7 @@ class SQLInsertCompiler(SQLCompiler):
                     setattr(obj, field.attname, python_val)
 
             if return_id and result_json:
-                return result_json[get_resource_name(query.model, many=False)][opts.pk.column]
+                return [(result_json[get_resource_name(query.model, many=False)][opts.pk.column],)]
 
 
 class FakeCursor(object):
